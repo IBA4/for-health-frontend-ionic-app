@@ -1,0 +1,12 @@
+<ion-segment value="hospitalSel">
+    <ion-segment-button value="hospitalSel" (click)="toggleSearch('hospital')">
+      <ion-label>Hospitals</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="DoctorSel" (click)="toggleSearch('doctor')">
+      <ion-label>Doctors</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+<ion-searchbar show-cancel-button cancel-button-text="Cancel" animated="true" ></ion-searchbar>
+<app-hospital-card *ngIf="showHospitalCard"></app-hospital-card>
+
+<app-doctor-card *ngIf="showDoctorCard"></app-doctor-card>

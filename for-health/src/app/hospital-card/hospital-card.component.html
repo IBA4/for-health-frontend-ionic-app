@@ -1,0 +1,14 @@
+
+<ion-list *ngFor="let hospital of hospitals">
+    <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Hospital</ion-card-subtitle>
+          <ion-card-title>{{hospital.name}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-item href="hospital-info" >
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>{{hospital.location}}</ion-label>
+        </ion-item>
+    </ion-card>
+  </ion-list>

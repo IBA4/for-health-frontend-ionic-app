@@ -1,9 +1,73 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Doctor <ion-badge color="success">5</ion-badge>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-card (click) = "presentAlert()">
+        <ion-card-content>
+          ONLINE
+        </ion-card-content>
+        
+          <ion-item >
+            <ion-avatar>
+              <ion-img src="../assets/doctor-F.jpeg"></ion-img>
+            </ion-avatar>
+              <ion-label>Dr. Bijaya Shrestha</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-avatar>
+                  <ion-img src="../assets/doctor-m.jpeg"></ion-img>
+                </ion-avatar>
+                  <ion-label>Dr. Bijay Shrestha</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-avatar>
+                      <ion-img src="../assets/doctor-m.jpeg"></ion-img>
+                    </ion-avatar>
+                      <ion-label>Dr. Keshab Adhikari</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-avatar>
+                          <ion-img src="../assets/doctor-m.jpeg"></ion-img>
+                        </ion-avatar>
+                          <ion-label>Dr. Sita Ram Bhandari</ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-avatar>
+                              <ion-img src="../assets/doctor-m.jpeg"></ion-img>
+                            </ion-avatar>
+                              <ion-label>Dr. Raju Magar</ion-label>
+                            </ion-item>
+
+      </ion-card>
+      <ion-card (click) = "presentAlert()">
+          <ion-card-content>
+            OFFLINE
+          </ion-card-content>
+          
+            <ion-item class="offline">
+              <ion-avatar>
+                <ion-img src="../assets/doctor-F.jpeg"></ion-img>
+              </ion-avatar>
+                <ion-label>Dr. Ishani Gyawali</ion-label>
+              </ion-item>
+              <ion-item class="offline">
+                  <ion-avatar>
+                    <ion-img src="../assets/doctor-m.jpeg"></ion-img>
+                  </ion-avatar>
+                    <ion-label>Dr. Min Boudel</ion-label>
+                  </ion-item>
+                  <ion-item class="offline">
+                      <ion-avatar>
+                        <ion-img src="../assets/doctor-m.jpeg"></ion-img>
+                      </ion-avatar>
+                        <ion-label>Dr. Bimal Adhikari</ion-label>
+                      </ion-item>
+                      
+  
+        </ion-card>
+</ion-content>

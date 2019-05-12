@@ -1,9 +1,52 @@
-<ion-header>
+<ion-header no-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-card>
+        <ion-item>
+          <ion-icon name="contact" slot="start"></ion-icon>
+          <ion-label>Hari Bahadur</ion-label>
+          <ion-button fill="outline" slot="end">Edit</ion-button>
+        </ion-item>
+      
+        <ion-card-content>
+          This is your general profile. This contains your general health statistics data.
+          This becomes helpful when you are consulting with your doctor.
+        </ion-card-content>
+        
+          <ion-item href="#">
+              <ion-label >Date of birth</ion-label>
+              <ion-label >2055-03-23</ion-label>
+            </ion-item>
+        
+            <ion-item href="#">
+                <ion-label >Sex</ion-label>
+                <ion-label >Male</ion-label>
+              </ion-item>
+              
+            <ion-item href="#">
+                  <ion-label >Blood Type</ion-label>
+                  <ion-label >Not-set</ion-label>
+                </ion-item>
+                <ion-item href="#">
+                    <ion-label >Blood-pressure</ion-label>
+                    <ion-label >Not-set</ion-label>
+                  </ion-item>
+                  <ion-item href="#">
+                      <ion-label >wheelchair</ion-label>
+                      <ion-label >Not-set</ion-label>
+                    </ion-item>
+      </ion-card>
+      <ion-content>
+        <ion-item>
+        <ion-button slot="start" fill="outline">Export your data</ion-button>
+        <ion-button slot="end" fill="outline">Import your data</ion-button>
+      </ion-item>
+      </ion-content>
+      
+</ion-content>

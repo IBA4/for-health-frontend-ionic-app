@@ -1,0 +1,13 @@
+
+<ion-list *ngFor="let doctor of doctors">
+    <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>doctor</ion-card-subtitle>
+          <ion-card-title>{{doctor.name}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-item href="doctor-info" >
+          <ion-label>{{doctor.qualification}}</ion-label>
+        </ion-item>
+    </ion-card>
+  </ion-list>
